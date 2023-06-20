@@ -1,0 +1,266 @@
+#! C:/Program Files/Nuke14.0v4/nuke-14.0.4.dll -nx
+version 14.0 v4
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="0" y="0" w="2557" h="1368" screen="0">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="1894" stretch="1"/>
+            <splitter orientation="2">
+                <split size="778"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="548"/>
+                <dock id="" activePageId="DAG.1" focus="true">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                </dock>
+            </splitter>
+            <split size="615"/>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"/>
+                <page id="uk.co.thefoundry.backgroundrenderview.1"/>
+                <page id="Scenegraph.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name C:/Users/dimer/Desktop/UNI/.nk
+ frame 214
+ last_frame 500
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ colorManagement Nuke
+ workingSpaceLUT linear
+ monitorLut sRGB
+ monitorOutLUT rec709
+ int8Lut sRGB
+ int16Lut sRGB
+ logLut Cineon
+ floatLut linear
+}
+Read {
+ inputs 0
+ file_type mov
+ file C:/Users/dimer/Downloads/IMG_7467.MOV
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ last 239
+ origlast 239
+ origset true
+ name Read2
+ xpos 308
+ ypos -167
+}
+Read {
+ inputs 0
+ file_type mov
+ file C:/Users/dimer/Downloads/IMG_7468.MOV
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ last 236
+ origlast 236
+ origset true
+ name Read1
+ xpos 17
+ ypos -190
+}
+Read {
+ inputs 0
+ file_type mov
+ file C:/Users/dimer/Downloads/IMG_7466.MOV
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ last 759
+ origlast 759
+ origset true
+ name Read3
+ xpos -288
+ ypos -74
+}
+Roto {
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097152}
+    {t x44700000 x44070000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Bezier1 512 bezier
+     {{cc
+       {f 8192}
+       {px x43540000
+        {0 0}
+        {x449b4859 x43ab190b}
+        {0 0}
+        {x418eebc0 x40db3400}
+        {x44972d32 x43a4b449}
+        {xbf91f400 xbedfdc00}
+        {x3f95c800 x3ee5b800}
+        {x44968109 x43a473df}
+        {xc1fe8c00 xc1433400}
+        {0 0}
+        {x448dbac8 x43968e9c}
+        {0 0}
+        {xb9000000 x4202b8a0}
+        {x448dae0a x43732802}
+        {0 xbf99d480}
+        {xb9c00000 x3f9bfe00}
+        {x448e192f x436f918c}
+        {x39800000 xbf438300}
+        {xb9c00000 x3f450d00}
+        {x448db19a x436d5850}
+        {x3c140000 xc193c970}
+        {xbe0e0000 x41940d00}
+        {x448da530 x4333ef1a}
+        {x3c8b0000 xc00fea40}
+        {xbc890000 x400c9c80}
+        {x448e48cd x432f0333}
+        {x3c8e0000 xc0127880}
+        {xbc8a0000 x400e71c0}
+        {x448da84f x432d23ac}
+        {x3e738000 xc1fa63e0}
+        {0 0}
+        {x448da157 x42e60b09}
+        {0 0}
+        {xc1d70140 x411d8648}
+        {x4493d483 x42bcf5de}
+        {x3fdb9400 xbf20e000}
+        {xbfdf8800 x3f213e00}
+        {x4494c2c1 x42bd2eec}
+        {x3f9b4000 xbedff200}
+        {xbf9ca800 x3edf5400}
+        {x449523be x42b78fd0}
+        {x4189b000 xc0c448f0}
+        {xc11e2580 x405d3380}
+        {x449b1646 x429755cf}
+        {x402e0c00 xbf737080}
+        {xbfcbdc00 x3f0e8e80}
+        {x449c0f45 x4297048f}
+        {x3fbc2c00 xbf039780}
+        {xbe9ba000 x3dd96800}
+        {x449c3a02 x42919f66}
+        {x41de9880 xc11b7f90}
+        {0 0}
+        {x44a2b400 x425c8000}
+        {0 0}
+        {0 0}
+        {x44afcbd4 x42f7d37b}
+        {0 0}
+        {xbdb14000 xc1f73ec8}
+        {x44afc2d9 x4332e075}
+        {x3b480000 x3f8ca800}
+        {xbb480000 xbf8ebe80}
+        {x44af5bfe x4335c976}
+        {x3b480000 x3f8be380}
+        {xbb500000 xbf8dc300}
+        {x44afbdaf x4338c899}
+        {x3d578000 x4192ea38}
+        {xbe152000 xc19692f8}
+        {x44afcc46 x43727167}
+        {x3c180000 x3f99c700}
+        {xbc1a0000 xbf981f80}
+        {x44af4637 x4375a30b}
+        {x3c380000 x3fb44b00}
+        {xbc380000 xbfb19f00}
+        {x44afca13 x437a0ca0}
+        {x3e376000 x41afd840}
+        {xbde38000 xc127f920}
+        {x44afe99a x43966e14}
+        {x3d6a8000 x40ad1040}
+        {0 0}
+        {x44afc65e x439ab5ef}
+        {0 0}
+        {x41ec43c0 xc0c54780}
+        {x44a96cc4 x439ff94d}
+        {xbff14c00 x3ec97800}
+        {x3ff71000 xbecd3c00}
+        {x44a864dc x439f655d}
+        {xbfab9400 x3e8e8800}
+        {x3fade400 xbe8fe800}
+        {x44a81c55 x43a1617f}
+        {xc1535480 x402ee200}
+        {x41563400 xc027f580}
+        {x44a2e55a x43a5c35a}
+        {xbfff0400 x3ec7f400}
+        {x3ff7fc00 xbec27400}
+        {x44a15955 x43a603d9}
+        {xc1d9f680 x40aae840}}}     idem}
+     {tx x43540000 x449eb2ab x43505555}
+     {a osw x41200000 osf 0 str 1 spx x44700000 spy x44070000 sb 1 ltn x43540000 ltm x43540000 tt x40800000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 tt 5 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { addPoints str 1 ssx 1 ssy 1 sf 1 }
+  { removePoints str 1 ssx 1 ssy 1 sf 1 }
+  { cuspPoints str 1 ssx 1 ssy 1 sf 1 }
+  { curvePoints str 1 ssx 1 ssy 1 sf 1 }
+  { removeFeather str 1 ssx 1 ssy 1 sf 1 }
+  { closeCurve str 1 ssx 1 ssy 1 sf 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {960 540}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ lifetime_start 212
+ lifetime_end 212
+ motionblur_shutter_offset_type centred
+ source_black_outside true
+ name Roto1
+ xpos -273
+ ypos 59
+}
+Premult {
+ name Premult1
+ xpos -273
+ ypos 138
+}
+Read {
+ inputs 0
+ file_type mov
+ file C:/Users/dimer/Downloads/IMG_7465.MOV
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ last 694
+ origlast 694
+ origset true
+ name Read4
+ xpos -462
+ ypos -19
+}
+Merge2 {
+ inputs 2
+ name Merge1
+ xpos -450
+ ypos 180
+}
+Viewer {
+ frame 214
+ frame_range 1-236
+ frame_range_lock true
+ monitorOutOutputTransform rec709
+ name Viewer1
+ xpos -40
+ ypos 138
+}
